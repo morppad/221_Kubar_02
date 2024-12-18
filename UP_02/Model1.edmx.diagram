@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="26b088bdbb224a45a5e03f97d3c8b20c" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.MaterialType" Width="2.875" PointX="6.625" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PartnerProducts" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Partners" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.PartnersType" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.ProductsType" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK__PartnerPr__Partn__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__PartnerPr__Produ__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Partners__Partne__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Products__Produc__403A8C7D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
