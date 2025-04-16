@@ -37,3 +37,33 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
+
+
+@startuml
+start
+
+:Выбор жильца из списка;
+:Загрузка данных из таблицы Residents;
+
+:Показать информацию о квартире и здании;
+--> [Residents.building_id -> Buildings.building_id]
+
+:Показать задолженности;
+--> [Residents.resident_id -> Debts.resident_id]
+
+:Показать заявки;
+--> [Residents.resident_id -> Requests.resident_id]
+--> [Requests.service_id -> Services.service_id]
+--> [Requests.status_id -> Statuses.status_id]
+
+if (Создать новую заявку?) then (да)
+    :Выбор услуги из Services;
+    :Создание записи в Requests;
+    note right
+        Поля: resident_id, service_id,\n
+        status_id = "новая", текущая дата
+    end note
+endif
+
+stop
+@enduml
