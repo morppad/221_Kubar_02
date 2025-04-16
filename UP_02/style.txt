@@ -29,3 +29,11 @@
         <Setter Property="Background" Value="{StaticResource PrimaryBackgroundBrush}"/>
     </Style>
 </ResourceDictionary>
+
+<Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/GlobalStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
