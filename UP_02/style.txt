@@ -1,0 +1,31 @@
+<!-- Цвета -->
+    <Color x:Key="PrimaryBackgroundColor">#FFFFFFFF</Color>
+    <Color x:Key="SecondaryBackgroundColor">#F4E8D3</Color>
+    <Color x:Key="AccentColor">#67BA80</Color>
+
+    <!-- Кисти -->
+    <SolidColorBrush x:Key="PrimaryBackgroundBrush" Color="{StaticResource PrimaryBackgroundColor}"/>
+    <SolidColorBrush x:Key="SecondaryBackgroundBrush" Color="{StaticResource SecondaryBackgroundColor}"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}"/>
+
+    <!-- Глобальный стиль текста -->
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+    </Style>
+
+    <!-- Глобальный стиль кнопки -->
+    <Style TargetType="Button">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="Background" Value="{StaticResource AccentBrush}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!-- Глобальный стиль окна -->
+    <Style TargetType="Window">
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryBackgroundBrush}"/>
+    </Style>
+</ResourceDictionary>
